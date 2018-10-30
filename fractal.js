@@ -5,6 +5,12 @@
 */
 const path = require('path');
 
+const paths = {
+  src: `${__dirname}/src`,
+  build: `${__dirname}/dist`,
+  static: `${__dirname}/static`
+}
+
 /*
  * Require the Fractal module
  */
@@ -18,14 +24,15 @@ fractal.set('project.title', 'Slalom Fractal Accelerator');
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'components'));
+ fractal.components.set('path', `${paths.src}/components`)
 
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.docs.set('path', path.join(__dirname, 'docs'));
+ fractal.docs.set('path', `${paths.src}/docs`)
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.web.set('static.path', path.join(__dirname, 'public'));
+ fractal.web.set('static.path', paths.static)
+ fractal.web.set('builder.dest', paths.build)
