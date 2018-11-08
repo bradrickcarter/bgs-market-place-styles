@@ -1,0 +1,93 @@
+// State
+.hide { display: none !important; }
+
+// Text Alignment
+.right { text-align: right !important; }
+.left { text-align: left !important; }
+.center { text-align: center !important; }
+
+// Display
+.block { display: block !important; }
+.flex { display: flex !important; }
+.inline-block { display: inline-block; }
+.inline-flex { display: inline-flex !important; }
+.inline { display: inline !important; }
+
+// Position
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+
+// Floats
+.float-left { float: left !important; }
+.float-right {float: right !important; }
+
+// Flex Direction
+.flex-column { flex-direction: column !important; }
+.flex-column-reverse { flex-direction: column-reverse !important; }
+.flex-row-reverse { flex-direction: row-reverse !important; }
+
+// Flex Wrap
+.flex-wrap { flex-wrap: wrap !important; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse !important; }
+
+// Flexbox Align Items
+.align-center { align-items: center !important; }
+.align-start { align-items: flex-start !important; }
+.align-end { align-items: flex-end !important; }
+.align-stretch { align-items: stretch !important; }
+.align-baseline { align-items: baseline !important; }
+
+// Flexbox Align Self
+.flex-self-center { align-self: center !important; }
+.flex-self-start { align-self: flex-start !important; }
+.flex-self-end { align-self: flex-end !important; }
+.flex-self-baseline { align-self: baseline !important; }
+.flex-self-stretch { align-self: stretch !important; }
+
+// Flexbox Justify Content
+.justify-content-start { justify-content: flex-start !important; }
+.justify-content-center { justify-content: center !important; }
+.justify-content-end { justify-content: flex-end !important; }
+.justify-content-around { justify-content: space-around !important; }
+.justify-content-between { justify-content: space-between !important; }
+
+// Pre-configured Flexbox Options
+.flex-auto { flex: 1 1 auto; }     // Forces an element to fill remaining horizontal space
+.flex-1 { flex: 1; }
+
+// Vertical Aign
+.valign-middle { vertical-align: middle; }
+
+// Wrap
+.whitespace-nowrap { white-space: nowrap; }
+
+// Word Break
+.break-word { word-break: break-word; }
+
+// Overflow
+.overflow-y-auto {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.overflow-y-hidden { overflow-y: hidden !important; }
+.overflow-visible { overflow: visible !important; }
+.overflow-hidden { overflow: hidden !important; }
+.overflow-auto { overflow: auto !important; }
+
+.no-scrollbar {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// List Styling
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Cursor Styling
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }

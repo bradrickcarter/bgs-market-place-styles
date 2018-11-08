@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+// Properly set box-sizing
+// 
+// Reference: https://css-tricks.com/box-sizing/#article-header-id-6
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Make sure links show the proper cursor
+a { cursor: pointer; }
+
+// Display svg icons properly
+svg {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  position: relative;
+}

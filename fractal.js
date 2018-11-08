@@ -24,15 +24,15 @@ fractal.set('project.title', 'Slalom Fractal Accelerator');
 /*
  * Tell Fractal where to look for components.
  */
- fractal.components.set('path', `${paths.src}/components`)
+ fractal.components.set('path', `${paths.src}/components`);
 
 /*
  * Tell Fractal where to look for documentation pages.
  */
- fractal.docs.set('path', `${paths.src}/docs`)
+ fractal.docs.set('path', `${paths.src}/docs`);
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
- fractal.web.set('static.path', paths.static)
- fractal.web.set('builder.dest', paths.build)
+ fractal.web.set('static.path', paths.static);
+ fractal.web.set('builder.dest', paths.build);
