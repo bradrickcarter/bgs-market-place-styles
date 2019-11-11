@@ -1,6 +1,6 @@
 {
-  "name": "slalom-fractal-accelerator",
-  "version": "0.1.0",
+  "name": "bgs-market-place-styles",
+  "version": "0.0.16",
   "main": "fractal.js",
   "scripts": {
     "start": "node_modules/.bin/gulp",

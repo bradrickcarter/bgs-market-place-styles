@@ -9,6 +9,7 @@
 @import 'tokens/spacing';
 @import 'tokens/type';
 @import 'tokens/z-index';
+@import 'tokens/fonts';
 
 // Utilities
 // 
@@ -23,7 +24,7 @@
 // Global
 // 
 // Global, non-component CSS
-@import '../../../node_modules/normalize.css/normalize.css';
+@import 'scaffold/normalize';
 @import 'scaffold/global';
 
 // Layouts
@@ -34,3 +35,5 @@
 // Components
 // 
 // Individual component-level CSS
+@import 'components/buttons';
+@import 'components/demo';

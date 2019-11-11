@@ -1,0 +1,9 @@
+{
+    "status": "ready",
+    "variants": [
+      {
+        "name": "default",
+        "label": "Tablse"
+      }
+    ]
+  }

@@ -19,12 +19,17 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Slalom Fractal Accelerator');
+fractal.set('project.title', 'BGS Market Place Styles');
 
 /*
  * Tell Fractal where to look for components.
  */
  fractal.components.set('path', `${paths.src}/components`);
+
+ /*
+ * Tell Fractal where to render components.
+ */
+ fractal.components.set('default.preview', '@preview');
 
 /*
  * Tell Fractal where to look for documentation pages.

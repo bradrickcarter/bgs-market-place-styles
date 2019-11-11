@@ -59,7 +59,7 @@ function build() {
   builder.on('error', err => logger.error(err.message));
 
   return builder.build().then(() => {
-    logger.success('👊  Connect Style build completed!');
+    logger.success('👊  BGS Style build completed!');
   });
 }
 
@@ -86,6 +86,12 @@ function images() {
     .pipe(gulp.dest(`${paths.static}/assets/images`))
 }
 
+function fonts() {
+  return gulp.src(`${paths.src}/assets/fonts/**/*`)
+    .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>")}))
+    .pipe(gulp.dest(`${paths.static}/assets/fonts`))
+}
+
 
 // Run our Development Web Server
 // 
@@ -110,14 +116,15 @@ function watch() {
   gulp.watch(`${paths.src}/**/*.scss`, styles)      // Watch Styles and rebuild
   // gulp.watch(`${paths.src}/**/*.js`, scripts)       // Watch Scripts and rebuild
   gulp.watch(`${paths.src}/assets/images`, images)  // Watch images and re-copy to static assets
-  // gulp.watch(`${paths.src}/assets/icons`, gulp.series(icons, styles))   // Watch icons and rebuild
+  gulp.watch(`${paths.src}/assets/fonts`, fonts)
+  //gulp.watch(`${paths.src}/assets/icons`, gulp.series(icons, styles))   // Watch icons and rebuild
 }
 
 // --------------------------------------------------------
 // Task Series
 // --------------------------------------------------------
 
-const compile = gulp.series(clean, gulp.parallel(styles))
+const compile = gulp.series(clean, gulp.parallel(styles, fonts))
 
 gulp.task('default', gulp.series(compile, watch));
 gulp.task('build', gulp.series(compile, build));
