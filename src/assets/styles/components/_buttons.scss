@@ -14,14 +14,14 @@
 
   /* -Demo New Version----------------------- */
 
-  //   &.primary-btn {
-  //     background-color: #3f7dc7;
-  //     border: #32649f;
-  //     color: #ffffff;
-  //     &:hover {
-  //       background-color: darken(#32649f, 5%);
-  //     }
-  //   }
+  &.primary-btn {
+    background-color: #3f7dc7;
+    border: #32649f;
+    color: #ffffff;
+    &:hover {
+      background-color: darken(#32649f, 5%);
+    }
+  }
   //   &.warning-btn {
   //     background-color: #ed553b;
   //     color: #ffffff;

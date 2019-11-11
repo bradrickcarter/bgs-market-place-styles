@@ -1075,12 +1075,6 @@ svg {
     color: #ffffff; }
     .btn.primary-btn:hover {
       background-color: #2c588c; }
-  .btn.warning-btn {
-    background-color: #ed553b;
-    color: #ffffff;
-    border: #eb4124; }
-    .btn.warning-btn:hover {
-      background-color: #eb4124; }
 
 /*-- Coded Prototype Framework Styles --*/
 .cpf--header {
@@ -1165,6 +1159,9 @@ svg {
   color: #666666;
   /* -Demo New Version----------------------- */
   background-color: #3f7dc7;
+  color: #ffffff;
+  /* -Demo Git Version----------------------- */
+  background-color: red;
   color: #ffffff; }
 
 .cpf-content-container table td:last-child {
