@@ -1,6 +1,6 @@
 {
   "name": "bgs-market-place-styles",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "fractal.js",
   "scripts": {
     "start": "node_modules/.bin/gulp",
